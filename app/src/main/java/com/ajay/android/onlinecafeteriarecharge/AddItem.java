@@ -59,6 +59,7 @@ public class AddItem extends AppCompatActivity {
         Toast.makeText(this, "Item added", Toast.LENGTH_LONG).show();
 
         databaseItems.child(id).setValue(items);
+        this.finish();
     }
 
 

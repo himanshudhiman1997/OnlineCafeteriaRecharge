@@ -1,92 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ajay.android.onlinecafeteriarecharge.AdminLogin"
+
     android:orientation="vertical"
-    android:background="@drawable/first">
+    tools:context="com.ajay.android.onlinecafeteriarecharge.AdminLogin">
 
-
-    <LinearLayout
+    <ListView
+        android:id="@+id/listViewItems"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        >
+        android:layout_height="match_parent"/>
 
-        <Button
 
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:text="Add Item"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/my_button_bg"
-            android:layout_gravity="center_horizontal"
-            android:onClick="addItem"
-            android:layout_weight="1"/>
-        <Button
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:text="Update Item"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/my_button_bg"
-            android:layout_gravity="center_horizontal"
-            android:onClick="updateItem"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        >
-
-    <Button
-        android:layout_weight="1"
+    <!--<Button
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:text="Delete Item"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/my_button_bg"
         android:layout_gravity="center_horizontal"
-        android:onClick="deleteItem"/>
-    <Button
-        android:layout_weight="1"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:text="View History"
         android:layout_marginTop="20dp"
+        android:layout_weight="1"
         android:background="@drawable/my_button_bg"
-        android:layout_gravity="center_horizontal"/>
-
-    </LinearLayout>
+        android:text="View History" />
 
 
-
-    <RelativeLayout
+    <Button
+        android:id="@+id/sign_out"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="#80B22222"
+        android:onClick="signout"
+        android:text="Sign Out" />-->
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="250dp">
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_backgroundColor="#000000"
+        fab:menu_colorNormal="#00C29F"
+        fab:menu_colorPressed="#00C29F"
+        fab:menu_colorRipple="#00C29F"
+        fab:menu_fab_label="Cancel"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true">
 
-        </ScrollView>
-
-        <Button
-            android:id="@+id/sign_out"
-            android:layout_width="match_parent"
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addItem"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Out"
-            android:layout_marginTop="40dp"
-            android:onClick="signout"
-            android:background="#80B22222"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            />
+            android:onClick="addItem"
+            android:src="@drawable/fab_add"
+            fab:fab_label="Add Item"
+            fab:fab_size="mini" />
 
-    </RelativeLayout>
-</LinearLayout>
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

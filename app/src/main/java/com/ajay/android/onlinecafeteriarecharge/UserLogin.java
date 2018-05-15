@@ -60,7 +60,7 @@ public class UserLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
-/*
+
 
     mUsername = ANONYMOUS;
 
@@ -96,10 +96,10 @@ public class UserLogin extends AppCompatActivity {
             }
         }
     };
-    */
+
 }
 
-/*
+
     @Override
     public void onActivityResult(int requestCode , int resultCode , Intent data)
     {
@@ -153,7 +153,7 @@ public class UserLogin extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
     }
-    */
+
 
     public void feedback(View v)
     {

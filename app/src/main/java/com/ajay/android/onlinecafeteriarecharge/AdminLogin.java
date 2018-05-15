@@ -1,11 +1,13 @@
 package com.ajay.android.onlinecafeteriarecharge;
 
+import android.content.ClipData;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -17,13 +19,23 @@ import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class AdminLogin extends AppCompatActivity {
+
+    DatabaseReference databaseReferenceItems;
+    List<Items> itemsList;
+
+
+
     private FirebaseAuth mAuth;
 
     private static final String TAG = "MainActivity";
@@ -52,7 +64,7 @@ public class AdminLogin extends AppCompatActivity {
         setContentView(R.layout.activity_admin_login);
 
 
-        /*mUsername = ANONYMOUS;
+        mUsername = ANONYMOUS;
 
         // Initialize Firebase components
         mFirebaseDatabase = FirebaseDatabase.getInstance();
@@ -81,11 +93,56 @@ public class AdminLogin extends AppCompatActivity {
                             RC_SIGN_IN);
                 }
             }
-        };*/
+        };
+
+
+        databaseReferenceItems = FirebaseDatabase.getInstance().getReference("items");
+        itemsList = new ArrayList<>();
 
 
     }
-    /*
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        databaseReferenceItems.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                itemsList.clear();
+                for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren())
+                {
+                    Items items = dataSnapshot1.getValue(Items.class);
+                    itemsList.add(items);
+                }
+
+                ItemsList adapter = new ItemsList(AdminLogin.this, itemsList);
+                ListView listViewItems = findViewById(R.id.listViewItems);
+                listViewItems.setAdapter(adapter);
+
+                listViewItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        Intent updateDeleteIntent = new Intent(AdminLogin.this, updateDelete.class);
+                        Items items = (Items) adapterView.getItemAtPosition(i);
+                        updateDeleteIntent.putExtra("name", items.getItemName());
+                        updateDeleteIntent.putExtra("price",items.getItemPrice());
+                        updateDeleteIntent.putExtra("quantity", items.getItemQuantity());
+                        updateDeleteIntent.putExtra("key",items.getItemId());
+                        startActivity(updateDeleteIntent);
+                    }
+                });
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+
 
     @Override
     public void onBackPressed()
@@ -140,7 +197,7 @@ public class AdminLogin extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
     }
-    */
+
 
     public void addItem(View v)
     {

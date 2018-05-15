@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1032982042914",
+    "firebase_url": "https://onlinecafeteriarecharge.firebaseio.com",
+    "project_id": "onlinecafeteriarecharge",
+    "storage_bucket": "onlinecafeteriarecharge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032982042914:android:8388030f6bb6b67d",
+        "android_client_info": {
+          "package_name": "com.ajay.android.onlinecafeteriarecharge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032982042914-n0gufhntjvf4mhi6s1603ot0476pe3vs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ajay.android.onlinecafeteriarecharge",
+            "certificate_hash": "ed6c36ad41dcf2b99dc515ba29590fb2a6975a27"
+          }
+        },
+        {
+          "client_id": "1032982042914-mm6ptgnjr5en9nlv2rl9gvl1365lsoai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA12C4k53g9EnpvztfTz9zpyxd1zNfrVsM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032982042914-mm6ptgnjr5en9nlv2rl9gvl1365lsoai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

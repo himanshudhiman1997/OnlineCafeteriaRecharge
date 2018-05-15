@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ajay.android.onlinecafeteriarecharge.AdminLogin"
+    android:orientation="vertical"
+    android:background="@drawable/first">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <Button
+
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Add Item"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/my_button_bg"
+            android:layout_gravity="center_horizontal"
+            android:onClick="addItem"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Update Item"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_button_bg"
+            android:layout_gravity="center_horizontal"
+            android:onClick="updateItem"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Item"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_button_bg"
+        android:layout_gravity="center_horizontal"
+        android:onClick="deleteItem"/>
+    <Button
+        android:layout_weight="1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_button_bg"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:layout_marginTop="40dp"
+            android:onClick="signout"
+            android:background="#80B22222"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

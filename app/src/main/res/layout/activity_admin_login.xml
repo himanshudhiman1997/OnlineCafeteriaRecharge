@@ -34,7 +34,7 @@
         android:layout_marginTop="40dp"
         android:background="#80B22222"
         android:onClick="signout"
-        android:text="Sign Out" />-->
+        android:text="Sign Out" />
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/floatingMenu"
@@ -48,17 +48,21 @@
         fab:menu_colorRipple="#00C29F"
         fab:menu_fab_label="Cancel"
         fab:menu_labels_ellipsize="end"
-        fab:menu_labels_singleLine="true">
+        fab:menu_labels_singleLine="true">-->
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/addItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:onClick="addItem"
+            app:rippleColor="#00C29F"
             android:src="@drawable/fab_add"
             fab:fab_label="Add Item"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"/>
 
 
-    </com.github.clans.fab.FloatingActionMenu>
+    <!--</com.github.clans.fab.FloatingActionMenu>-->
 </RelativeLayout>

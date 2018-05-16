@@ -4,39 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     android:orientation="vertical"
-    tools:context=".updateDelete">
+    tools:context=".updateDelete"
+    android:background="#0D47A1">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#BBDEFB"
+        android:textSize="20sp"
+        />
     <EditText
         android:id="@+id/itemNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Item Name" />
+        android:hint="Item Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:textColor="#BBDEFB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
 
     <EditText
         android:id="@+id/itemPriceEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Price" />
+        android:hint="Price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity: "
+        android:textColor="#BBDEFB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
 
     <EditText
         android:id="@+id/itemQuantityEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Quantity" />
+        android:hint="Quantity"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="updateItem"
-        android:text="Update" />
+        android:text="Update"
+        android:background="#2196F3"
+        android:textColor="#90CAF9"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="deleteItem"
-        android:text="Delete" />
+        android:text="Delete"
+        android:textColor="#90CAF9"
+        android:background="#2196F3"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

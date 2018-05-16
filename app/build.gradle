@@ -27,6 +27,8 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:2.3.0'
     testImplementation 'junit:junit:4.12'
     compile 'com.github.clans:fab:1.6.4'
+    compile 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }

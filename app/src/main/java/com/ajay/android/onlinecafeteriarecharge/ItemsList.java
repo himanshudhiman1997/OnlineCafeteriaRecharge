@@ -41,8 +41,8 @@ public class ItemsList extends ArrayAdapter<Items> {
 
         final Items items = itemsList.get(position);
 
-        itemNameTextView.setText("Item name: " + items.getItemName());
-        itemPriceTextView.setText("Price: " + items.getItemPrice());
+        itemNameTextView.setText(items.getItemName().toUpperCase());
+        itemPriceTextView.setText("Price: " + items.getItemPrice()+ " ₹");
         itemQuantityTextView.setText("Quantity: " + items.getItemQuantity());
 
 

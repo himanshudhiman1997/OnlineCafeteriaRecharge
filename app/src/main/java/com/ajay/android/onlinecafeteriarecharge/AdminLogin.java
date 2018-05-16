@@ -1,5 +1,6 @@
 package com.ajay.android.onlinecafeteriarecharge;
 
+import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -96,14 +97,22 @@ public class AdminLogin extends AppCompatActivity {
         };
 
 
+
+
         databaseReferenceItems = FirebaseDatabase.getInstance().getReference("items");
         itemsList = new ArrayList<>();
+
 
 
     }
 
     @Override
     protected void onStart() {
+        final ProgressDialog progress = new ProgressDialog(this);
+        progress.setTitle("Loading");
+        progress.setMessage("Wait while loading...");
+        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
+        progress.show();
         super.onStart();
 
         databaseReferenceItems.addValueEventListener(new ValueEventListener() {
@@ -119,6 +128,7 @@ public class AdminLogin extends AppCompatActivity {
                 ItemsList adapter = new ItemsList(AdminLogin.this, itemsList);
                 ListView listViewItems = findViewById(R.id.listViewItems);
                 listViewItems.setAdapter(adapter);
+                progress.dismiss();
 
                 listViewItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override

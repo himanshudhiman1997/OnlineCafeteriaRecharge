@@ -59,7 +59,7 @@ public class MyCard extends AppCompatActivity {
                         Card card = dataSnapshot1.getValue(Card.class);
                         nameText.setText(card.getUniqueName());
                         phoneText.setText(card.getPhoneNumber());
-                        balanceText.setText(String.valueOf(card.getBalance()));
+                        balanceText.setText(card.getBalance());
                     }
 
             }

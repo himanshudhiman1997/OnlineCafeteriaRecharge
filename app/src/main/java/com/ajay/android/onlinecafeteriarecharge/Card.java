@@ -5,14 +5,14 @@ public class Card {
     String cardId;
     String uniqueName;
     String phoneNumber;
-    int balance;
+    String balance;
 
     public Card()
     {
 
     }
 
-    public Card(String cardId, String uniqueName, String phoneNumber, int balance) {
+    public Card(String cardId, String uniqueName, String phoneNumber, String balance) {
         this.cardId = cardId;
         this.uniqueName = uniqueName;
         this.phoneNumber = phoneNumber;
@@ -31,7 +31,7 @@ public class Card {
         return phoneNumber;
     }
 
-    public int getBalance() {
+    public String getBalance() {
         return balance;
     }
 }

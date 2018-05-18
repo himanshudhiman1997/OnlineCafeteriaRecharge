@@ -19,7 +19,7 @@ public class GetMyCard extends AppCompatActivity {
 
     EditText editUniqueName;
     EditText editPhoneNumber;
-    int balance = 0;
+    String balance = "0";
 
     Button saveDetailsButton;
 

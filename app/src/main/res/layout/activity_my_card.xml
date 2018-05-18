@@ -7,27 +7,31 @@
     android:orientation="vertical"
     tools:context="com.ajay.android.onlinecafeteriarecharge.MyCard">
 
+    <EditText
+        android:id="@+id/uniqueNameEditDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your unique id"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get my details"
+        android:onClick="getDetails"/>
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Card Number: 123"
-        android:textColor="#000000"
         android:textSize="20sp"
-        android:layout_margin="10dp"/>
+        android:text="name"/>
     <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/balance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Card Name: ABC"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:layout_margin="10dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Balance: 100 Rs."
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:layout_margin="10dp"/>
+        android:textSize="20sp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

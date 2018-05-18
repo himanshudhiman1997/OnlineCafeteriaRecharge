@@ -100,14 +100,13 @@ public class UserLogin extends AppCompatActivity {
     };*/
 
     viewItemsButton = (Button) findViewById(R.id.viewItemsButton);
-    viewItemsButton.setOnClickListener(new View.OnClickListener()
-    {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(UserLogin.this, view_items.class);
-            startActivity(intent);
-        }
-    });
+   // viewItemsButton.setOnClickListener(new View.OnClickListener()
+    //{
+    //    @Override
+     //   public void onClick(View view) { Intent intent = new Intent(UserLogin.this, view_items.class);
+     //       startActivity(intent);
+     //   }
+   // });
 
     }
 
@@ -177,10 +176,7 @@ public class UserLogin extends AppCompatActivity {
         startActivity(contact);
     }
 
-    public void aboutUs(View v) {
-        Intent about = new Intent(UserLogin.this, AboutUs.class);
-        startActivity(about);
-    }
+
 
     public void signout(View v) {
         AuthUI.getInstance().signOut(this);
@@ -191,6 +187,12 @@ public class UserLogin extends AppCompatActivity {
     public void myCard(View v) {
         Intent recharge = new Intent(UserLogin.this, MyCard.class);
         startActivity(recharge);
+    }
+    public void getMyCard(View v)
+    {
+        Intent getMyCard = new Intent(UserLogin.this, GetMyCard.class);
+        startActivity(getMyCard);
+
     }
 
 }

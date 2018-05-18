@@ -43,6 +43,10 @@
         <activity android:name=".MyCard" />
         <activity android:name=".Recharge" />
         <activity android:name=".updateDelete" />
+        <activity
+            android:name=".GetMyCard"
+            android:label="@string/title_activity_get_my_card"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
     </application>
 
 </manifest>

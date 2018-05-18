@@ -25,6 +25,16 @@
         android:background="@drawable/my_button_bg"
         android:layout_gravity="center_horizontal"
         android:onClick="myCard"/>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Get my new card"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_button_bg"
+        android:layout_gravity="center_horizontal"
+        android:onClick="getMyCard"/>
+
     <Button
         android:layout_width="170dp"
         android:layout_height="wrap_content"

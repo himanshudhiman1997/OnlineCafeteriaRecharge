@@ -55,14 +55,16 @@ public class UserLogin extends AppCompatActivity {
 
     public int backpress;
 
+    Button viewItemsButton;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
 
 
-    mUsername = ANONYMOUS;
+    /*mUsername = ANONYMOUS;
 
     // Initialize Firebase components
     mFirebaseDatabase = FirebaseDatabase.getInstance();
@@ -95,11 +97,21 @@ public class UserLogin extends AppCompatActivity {
                         RC_SIGN_IN);
             }
         }
-    };
+    };*/
 
-}
+    viewItemsButton = (Button) findViewById(R.id.viewItemsButton);
+    viewItemsButton.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(UserLogin.this, view_items.class);
+            startActivity(intent);
+        }
+    });
 
+    }
 
+/*
     @Override
     public void onActivityResult(int requestCode , int resultCode , Intent data)
     {
@@ -146,7 +158,7 @@ public class UserLogin extends AppCompatActivity {
             mFirebaseAuth.removeAuthStateListener(mAuthStateListener);
         }
     }
-
+*/
 
 
     @Override
@@ -155,33 +167,29 @@ public class UserLogin extends AppCompatActivity {
     }
 
 
-    public void feedback(View v)
-    {
-        Intent feed = new Intent(UserLogin.this,Feedback.class);
+    public void feedback(View v) {
+        Intent feed = new Intent(UserLogin.this, Feedback.class);
         startActivity(feed);
     }
 
-    public void contactus(View v)
-    {
-        Intent contact = new Intent(UserLogin.this,ContactUs.class);
+    public void contactus(View v) {
+        Intent contact = new Intent(UserLogin.this, ContactUs.class);
         startActivity(contact);
     }
 
-    public void aboutUs(View v)
-    {
-        Intent about = new Intent(UserLogin.this,AboutUs.class);
+    public void aboutUs(View v) {
+        Intent about = new Intent(UserLogin.this, AboutUs.class);
         startActivity(about);
     }
 
-    public void signout(View v)
-    {
+    public void signout(View v) {
         AuthUI.getInstance().signOut(this);
-        Intent main = new Intent(UserLogin.this,MainActivity.class);
+        Intent main = new Intent(UserLogin.this, MainActivity.class);
         startActivity(main);
     }
-    public void myCard(View v)
-    {
-        Intent recharge = new Intent(UserLogin.this,MyCard.class);
+
+    public void myCard(View v) {
+        Intent recharge = new Intent(UserLogin.this, MyCard.class);
         startActivity(recharge);
     }
 

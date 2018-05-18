@@ -36,7 +36,6 @@ public class AdminLogin extends AppCompatActivity {
     List<Items> itemsList;
 
 
-
     private FirebaseAuth mAuth;
 
     private static final String TAG = "MainActivity";
@@ -45,7 +44,6 @@ public class AdminLogin extends AppCompatActivity {
     public static final int DEFAULT_MSG_LENGTH_LIMIT = 1000;
 
     public static final int RC_SIGN_IN = 1;
-
 
 
     private String mUsername;
@@ -97,11 +95,8 @@ public class AdminLogin extends AppCompatActivity {
         };
 
 
-
-
         databaseReferenceItems = FirebaseDatabase.getInstance().getReference("items");
         itemsList = new ArrayList<>();
-
 
 
     }
@@ -119,8 +114,7 @@ public class AdminLogin extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 itemsList.clear();
-                for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren())
-                {
+                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
                     Items items = dataSnapshot1.getValue(Items.class);
                     itemsList.add(items);
                 }
@@ -136,9 +130,9 @@ public class AdminLogin extends AppCompatActivity {
                         Intent updateDeleteIntent = new Intent(AdminLogin.this, updateDelete.class);
                         Items items = (Items) adapterView.getItemAtPosition(i);
                         updateDeleteIntent.putExtra("name", items.getItemName());
-                        updateDeleteIntent.putExtra("price",items.getItemPrice());
+                        updateDeleteIntent.putExtra("price", items.getItemPrice());
                         updateDeleteIntent.putExtra("quantity", items.getItemQuantity());
-                        updateDeleteIntent.putExtra("key",items.getItemId());
+                        updateDeleteIntent.putExtra("key", items.getItemId());
                         startActivity(updateDeleteIntent);
                     }
                 });
@@ -151,6 +145,8 @@ public class AdminLogin extends AppCompatActivity {
             }
         });
     }
+
+
 
 
 

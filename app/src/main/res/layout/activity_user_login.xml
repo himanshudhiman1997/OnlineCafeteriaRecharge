@@ -9,19 +9,14 @@
     tools:context="com.ajay.android.onlinecafeteriarecharge.UserLogin">
 
     <Button
+        android:id="@+id/viewItemsButton"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="View Items"
         android:layout_marginTop="50dp"
         android:background="@drawable/my_button_bg"
         android:layout_gravity="center_horizontal"/>
-    <Button
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:text="View Cart"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/my_button_bg"
-        android:layout_gravity="center_horizontal"/>
+
     <Button
         android:layout_width="170dp"
         android:layout_height="wrap_content"
@@ -46,15 +41,6 @@
         android:background="@drawable/my_button_bg"
         android:layout_gravity="center_horizontal"
         android:onClick="contactus"/>
-    <Button
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:text="About Us"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/my_button_bg"
-        android:layout_gravity="center_horizontal"
-        android:onClick="aboutUs"
-        />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

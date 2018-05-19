@@ -46,6 +46,10 @@
         <activity
             android:name=".GetMyCard"
             android:label="@string/title_activity_get_my_card"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".ViewItems"
+            android:label="@string/title_activity_view_items"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
     </application>
 

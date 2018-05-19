@@ -64,7 +64,7 @@ public class UserLogin extends AppCompatActivity {
         setContentView(R.layout.activity_user_login);
 
 
-    /*mUsername = ANONYMOUS;
+    mUsername = ANONYMOUS;
 
     // Initialize Firebase components
     mFirebaseDatabase = FirebaseDatabase.getInstance();
@@ -97,20 +97,20 @@ public class UserLogin extends AppCompatActivity {
                         RC_SIGN_IN);
             }
         }
-    };*/
+    };
 
     viewItemsButton = (Button) findViewById(R.id.viewItemsButton);
-   // viewItemsButton.setOnClickListener(new View.OnClickListener()
-    //{
-    //    @Override
-     //   public void onClick(View view) { Intent intent = new Intent(UserLogin.this, view_items.class);
-     //       startActivity(intent);
-     //   }
-   // });
+    viewItemsButton.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View view) { Intent intent = new Intent(UserLogin.this, ViewItems.class);
+            startActivity(intent);
+        }
+    });
 
     }
 
-/*
+
     @Override
     public void onActivityResult(int requestCode , int resultCode , Intent data)
     {
@@ -157,7 +157,7 @@ public class UserLogin extends AppCompatActivity {
             mFirebaseAuth.removeAuthStateListener(mAuthStateListener);
         }
     }
-*/
+
 
 
     @Override

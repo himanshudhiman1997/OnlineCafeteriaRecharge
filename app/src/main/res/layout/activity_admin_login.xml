@@ -15,40 +15,6 @@
         android:layout_height="match_parent"/>
 
 
-    <!--<Button
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_weight="1"
-        android:background="@drawable/my_button_bg"
-        android:text="View History" />
-
-
-    <Button
-        android:id="@+id/sign_out"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="40dp"
-        android:background="#80B22222"
-        android:onClick="signout"
-        android:text="Sign Out" />
-
-    <com.github.clans.fab.FloatingActionMenu
-        android:id="@+id/floatingMenu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp"
-        fab:menu_animationDelayPerItem="0"
-        fab:menu_backgroundColor="#000000"
-        fab:menu_colorNormal="#00C29F"
-        fab:menu_colorPressed="#00C29F"
-        fab:menu_colorRipple="#00C29F"
-        fab:menu_fab_label="Cancel"
-        fab:menu_labels_ellipsize="end"
-        fab:menu_labels_singleLine="true">-->
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/addItem"

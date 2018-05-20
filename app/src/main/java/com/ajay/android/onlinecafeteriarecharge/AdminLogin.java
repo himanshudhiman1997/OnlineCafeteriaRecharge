@@ -69,7 +69,7 @@ public class AdminLogin extends AppCompatActivity {
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mFirebaseAuth = FirebaseAuth.getInstance();
 
-        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
+        /*mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -94,7 +94,7 @@ public class AdminLogin extends AppCompatActivity {
             }
         };
 
-
+*/
         databaseReferenceItems = FirebaseDatabase.getInstance().getReference("items");
         itemsList = new ArrayList<>();
 
@@ -150,7 +150,7 @@ public class AdminLogin extends AppCompatActivity {
 
 
 
-    @Override
+    /*@Override
     public void onBackPressed()
     {
 
@@ -197,7 +197,7 @@ public class AdminLogin extends AppCompatActivity {
         if (mAuthStateListener != null) {
             mFirebaseAuth.removeAuthStateListener(mAuthStateListener);
         }
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

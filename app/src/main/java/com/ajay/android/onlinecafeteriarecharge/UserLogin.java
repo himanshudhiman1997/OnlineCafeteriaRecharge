@@ -70,7 +70,7 @@ public class UserLogin extends AppCompatActivity {
     mFirebaseDatabase = FirebaseDatabase.getInstance();
     mFirebaseAuth = FirebaseAuth.getInstance();
 
-    mAuthStateListener = new FirebaseAuth.AuthStateListener() {
+    /*mAuthStateListener = new FirebaseAuth.AuthStateListener() {
         @Override
         public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
             FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -97,7 +97,7 @@ public class UserLogin extends AppCompatActivity {
                         RC_SIGN_IN);
             }
         }
-    };
+    };*/
 
     viewItemsButton = (Button) findViewById(R.id.viewItemsButton);
     viewItemsButton.setOnClickListener(new View.OnClickListener()
@@ -111,7 +111,7 @@ public class UserLogin extends AppCompatActivity {
     }
 
 
-    @Override
+    /*@Override
     public void onActivityResult(int requestCode , int resultCode , Intent data)
     {
         super.onActivityResult(requestCode,resultCode,data);
@@ -159,7 +159,7 @@ public class UserLogin extends AppCompatActivity {
     }
 
 
-
+*/
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);

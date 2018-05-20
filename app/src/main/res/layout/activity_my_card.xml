@@ -5,39 +5,83 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context="com.ajay.android.onlinecafeteriarecharge.MyCard">
 
     <EditText
         android:id="@+id/uniqueNameEditDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:textColorHint="#000000"
         android:hint="Enter your unique id"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Get my details"
-        android:onClick="getDetails"/>
+        android:background="#7E57C2"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="10dp"
+        android:onClick="getDetails"
+        android:elevation="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        ></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:text="Your details:"
+        android:textSize="20sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        ></View>
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="name"/>
+        android:textSize="17sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="No data found"/>
     <TextView
         android:id="@+id/phone"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        />
     <TextView
         android:id="@+id/balance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"/>
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recharge"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/my_button_bg"
+        android:elevation="10dp"
+        android:background="#7E57C2"
         android:onClick="recharge"/>
 </LinearLayout>

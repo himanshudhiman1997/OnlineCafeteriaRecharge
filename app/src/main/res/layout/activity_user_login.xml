@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/first"
+    android:background="@color/cardview_dark_background"
     tools:context="com.ajay.android.onlinecafeteriarecharge.UserLogin">
 
     <Button
@@ -14,7 +14,10 @@
         android:layout_height="wrap_content"
         android:text="View Items"
         android:layout_marginTop="50dp"
-        android:background="@drawable/my_button_bg"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:elevation="10dp"
+        android:translationZ="10dp"
         android:layout_gravity="center_horizontal"/>
 
     <Button
@@ -22,7 +25,10 @@
         android:layout_height="wrap_content"
         android:text="My Card"
         android:layout_marginTop="20dp"
-        android:background="@drawable/my_button_bg"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:elevation="10dp"
+        android:translationZ="10dp"
         android:layout_gravity="center_horizontal"
         android:onClick="myCard"/>
 
@@ -31,7 +37,10 @@
         android:layout_height="wrap_content"
         android:text="Get my new card"
         android:layout_marginTop="20dp"
-        android:background="@drawable/my_button_bg"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:elevation="10dp"
+        android:translationZ="10dp"
         android:layout_gravity="center_horizontal"
         android:onClick="getMyCard"/>
 
@@ -40,7 +49,10 @@
         android:layout_height="wrap_content"
         android:text="Feedback"
         android:layout_marginTop="20dp"
-        android:background="@drawable/my_button_bg"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:elevation="10dp"
+        android:translationZ="10dp"
         android:layout_gravity="center_horizontal"
         android:onClick="feedback"/>
     <Button
@@ -48,7 +60,10 @@
         android:layout_height="wrap_content"
         android:text="Contact Us"
         android:layout_marginTop="20dp"
-        android:background="@drawable/my_button_bg"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:elevation="10dp"
+        android:translationZ="10dp"
         android:layout_gravity="center_horizontal"
         android:onClick="contactus"/>
     <RelativeLayout
@@ -62,6 +77,9 @@
             android:text="Sign Out"
             android:layout_marginTop="40dp"
             android:onClick="signout"
+            android:textColor="#ffffff"
+            android:elevation="10dp"
+            android:translationZ="10dp"
             android:background="#80B22222"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"

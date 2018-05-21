@@ -5,33 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GetMyCard"
+    android:layout_margin="10dp"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Unique Name"/>
+        android:text="Unique Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
     <EditText
         android:id="@+id/uniqueNameEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:text="Your unique id is the name in email id without @gmail.com"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:text="Phone No"/>
     <EditText
         android:id="@+id/phoneNumberEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:inputType="number"/>
     <Button
         android:id="@+id/saveDetailsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:translationZ="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
         android:text="Save Details"/>
 </LinearLayout>

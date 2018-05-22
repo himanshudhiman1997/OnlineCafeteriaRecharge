@@ -12,29 +12,34 @@
         android:layout_height="wrap_content"
         android:text="Delete Item"
         android:textSize="25sp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
         android:textColor="#000000"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Item Name:"
+        android:layout_marginTop="20dp"
         android:textSize="20sp"
         android:layout_marginLeft="10dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Price:"
+        android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_marginLeft="10dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:inputType="number"/>
     <TextView
@@ -42,11 +47,13 @@
         android:layout_height="wrap_content"
         android:text="Quantity:"
         android:textSize="20sp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:inputType="number"/>
     <LinearLayout
@@ -60,6 +67,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delete"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/my_button_bg"
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"/>
@@ -68,6 +77,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cancel"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/my_button_bg"
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"/>

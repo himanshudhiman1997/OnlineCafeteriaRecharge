@@ -67,7 +67,6 @@ public class ViewItems extends AppCompatActivity {
         mFirebaseDatabase = FirebaseDatabase.getInstance();
 
 
-
         databaseReferenceItems = FirebaseDatabase.getInstance().getReference("items");
         itemsList = new ArrayList<>();
 
@@ -118,15 +117,6 @@ public class ViewItems extends AppCompatActivity {
             }
         });
     }
-
-
-
-
-
-
-
-
-
 
 
 }

@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/cardview_shadow_start_color"
     tools:context="com.ajay.android.onlinecafeteriarecharge.ContactUs">
 
-    <!--<TextView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Owner:"
@@ -39,11 +40,5 @@
         android:textColor="#000000"
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
-        android:textSize="20sp"/>-->
-    <VideoView
-        android:id="@+id/video"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@raw/vi"
-        />
+        android:textSize="20sp"/>
 </LinearLayout>

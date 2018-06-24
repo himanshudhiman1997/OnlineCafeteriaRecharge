@@ -9,4 +9,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_view_items">view_items</string>
     <string name="title_activity_get_my_card">GetMyCard</string>
+    <string name="owner">Owner:</string>
+    <string name="Himanshu">Himanshu</string>
 </resources>
